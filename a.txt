@@ -1,0 +1,192 @@
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git init
+Initialized empty Git repository in C:/Users/Vinay/Desktop/New folder/.git/
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git remote add origin "https://github.com/vinay-kumbhar/pythonbatch3.git"
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/vinay-kumbhar/pythonbatch3
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git add CustomerCreate
+warning: LF will be replaced by CRLF in CustomerCreate/.gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/.mvn/wrapper/MavenWrapperDownloader.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/.mvn/wrapper/maven-wrapper.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/mvnw.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/mvnw.cmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/pom.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/src/main/java/com/app/twl/main/CustomerCreateApplication.java.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/src/main/resources/application.properties.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in CustomerCreate/src/test/java/com/example/demo/CustomerCreateApplicationTests.java.
+The file will have its original line endings in your working directory
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git commit -m "by vinay"
+[master 3af253b] by vinay
+ 21 files changed, 1779 insertions(+)
+ create mode 100644 CustomerCreate/.gitignore
+ create mode 100644 CustomerCreate/.mvn/wrapper/MavenWrapperDownloader.java
+ create mode 100644 CustomerCreate/.mvn/wrapper/maven-wrapper.jar
+ create mode 100644 CustomerCreate/.mvn/wrapper/maven-wrapper.properties
+ create mode 100644 CustomerCreate/mvnw
+ create mode 100644 CustomerCreate/mvnw.cmd
+ create mode 100644 CustomerCreate/pom.xml
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/CustomerCreateApplication.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/Address.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/BankDetails.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/Branch.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/BusinessDetails.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/CustomerDetails.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/Documents.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/Enquiry.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/GuarantorDetails.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/Lead.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/PersonalDetails.java
+ create mode 100644 CustomerCreate/src/main/java/com/app/twl/main/model/PreviousLoanDetails.java
+ create mode 100644 CustomerCreate/src/main/resources/application.properties
+ create mode 100644 CustomerCreate/src/test/java/com/example/demo/CustomerCreateApplicationTests.java
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+Enumerating objects: 41, done.
+Counting objects: 100% (41/41), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (30/30), done.
+Writing objects: 100% (40/40), 58.17 KiB | 1009.00 KiB/s, done.
+Total 40 (delta 0), reused 0 (delta 0)
+To https://github.com/vinay-kumbhar/pythonbatch3.git
+   33b210d..3af253b  master -> master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout -b team1
+Switched to a new branch 'team1'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git add a.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git commit -m "team 1 commit"
+[team1 34b1220] team 1 commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git push origin team1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'team1' on GitHub by visiting:
+remote:      https://github.com/vinay-kumbhar/pythonbatch3/pull/new/team1
+remote:
+To https://github.com/vinay-kumbhar/pythonbatch3.git
+ * [new branch]      team1 -> team1
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git add ab.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git commit -m "aaaa"
+[team1 9738513] aaaa
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ab.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git push origin team1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vinay-kumbhar/pythonbatch3.git
+   34b1220..9738513  team1 -> team1
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git checkout master
+Switched to branch 'master'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout team1
+Switched to branch 'team1'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team1)
+$ git checkout master
+Switched to branch 'master'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git checkout -b team2
+Switched to a new branch 'team2'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team2)
+$ git add ac.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team2)
+$ git commit -m "team2 commit"
+[team2 0378179] team2 commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ac.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team2)
+$ git push origin team2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'team2' on GitHub by visiting:
+remote:      https://github.com/vinay-kumbhar/pythonbatch3/pull/new/team2
+remote:
+To https://github.com/vinay-kumbhar/pythonbatch3.git
+ * [new branch]      team2 -> team2
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (team2)
+$ git checkout master
+Switched to branch 'master'
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git merge -m "merge branch"
+fatal: No remote for the current branch.
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git merge team2 -m "merge branch"
+Updating 3af253b..0378179
+Fast-forward (no commit created; -m option ignored)
+ ac.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ac.txt
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/vinay-kumbhar/pythonbatch3.git
+   3af253b..0378179  master -> master
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$ ^C
+
+Vinay@DESKTOP-OPGC52V MINGW64 ~/Desktop/New folder (master)
+$
