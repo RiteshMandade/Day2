@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block home %}
+{% if products %}
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--Filter-->
+            <div  class="col-lg-3 mx-auto">
+                    <div class="list-group">
+                        {% if category %}
+                            {% for category in category %}
+                                <a href="/store/?category={{category.name}}" class="list-group-item
+                                list-group-item-action">{{category.name}}</a>
+                            {% endfor %}
+                        {% else %}
+                            <h4>No Category Found</h4>
+                        {% endif %}
+                        <!--<a href="#" class="list-group-item
+                        list-group-item-action">Ayurvedic</a>
+                        <a href="#" class="list-group-item
+                        list-group-item-action">Allopathy</a>
+                        <a href="#" class="list-group-item
+                        list-group-item-action">Bueaty Products</a>-->
+                    </div>
+            </div>
+
+            <!--all Products-->
+                <div id="products" class="col-lg-9 mx-auto">
+                    <div class="row mx-auto">
+                        {% for prod in products %}
+                            <div class="col-lg-3" style="margin-top:30px; margin-right:30px">
+                                    <div class="card" style="width: 18rem; height:20rem;" >
+                                                <img class="card-img-top" src="{{ prod.p_image.url }}" class="card-img-top" style="height:10rem;" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">{{prod.pname}}</h5>
+                                                  <p class="card-text">{{prod.price}}</p>
+                                                  <a href="#" class="btn btn-primary">Add to cart</a>
+                                                </div>
+                                    </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}
